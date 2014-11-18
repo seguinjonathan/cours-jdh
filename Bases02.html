@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <script language="javascript" type="text/javascript">
+            tab_pays = [["Allemagne", 11], ["France", 10], ["Papouasie",150]];
+            resultat = "<table border=\"1\"><thead><tr bgcolor=\"#AAFFAA\"><th>Pays</th><th>Frais</th></tr></thead><tbody>";
+            liste = "<select name=\"Pays\">";
+            for (i = 0; i < tab_pays.length; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    bgcolor = "#FFAAAA";
+                }
+                else
+                {
+                    bgcolor = "#AAFFAA";
+                }
+                ;
+                resultat += "<tr bgcolor=\"" + bgcolor + "\"><td>" + tab_pays[i][0] + "</td><td>" + tab_pays[i][1] + "</td></tr>";
+                liste += "<option>" + tab_pays[i][0] + "</option>";
+            }
+            ;
+            resultat += "</tbody></table>";
+            liste += "</select>";
+        </script>
+    </head>
+    <body>
+        <div>TODO write content</div>
+        <script language="javascript" type="text/javascript">
+            document.write(resultat);
+            document.write(liste);
+        </script>
+    </body>
+</html>
