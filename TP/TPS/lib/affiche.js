@@ -16,7 +16,7 @@ function affichePageBandeauHaut()
 function affichePageTitre(pageactuel)
 {
     resultat="<div id=\"titre\"><h1>Titre de la page</h1></div>";
-    for  (i=0;i<3;i++)
+    for  (i=0;i<pagesDisponibles.length;i++)
     {
         if (pageactuel===pagesDisponibles[i][1])
         {

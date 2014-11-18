@@ -12,12 +12,12 @@ function affichePageMenu(pageactuel)
 {
     resultat="<div id=\"menu\"><ul id=\"Menu\">";
     
-    for  (i=0;i<3;i++)
+    for  (i=0;i<pagesDisponibles.length;i++)
     {
         
         if (pageactuel===pagesDisponibles[i][1])
         {
-            resultat+="<li><a href=\"#\" title=\""+pagesDisponibles[i][2]+"\">"+pagesDisponibles[i][0]+"</a></li>";
+            resultat+="<li><a href=\"#\" title=\""+pagesDisponibles[i][2]+"\"><b>"+pagesDisponibles[i][0]+"</b></a></li>";
         }
         else
         {
